@@ -1,0 +1,377 @@
+[1601672576.403][INFO]: Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 17930
+[1601672576.404][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1601672577.396][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "/Users/znakarik/IdeaProjects/selenoidTest/build/downloads/1601672574518_34870_1",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>", "--disable-dev-shm-usage" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "/Users/znakarik/IdeaProjects/selenoidTest/build/downloads/1601672574518_34870_1",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1601672577.399][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "/Users/znakarik/IdeaProjects/selenoidTest/build/downloads/1601672574518_34870_1"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1601672577.400][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1601672577.400][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/9b/fyg979ps08ncc1x80767xv7r0000gn/T/.com.google.Chrome.59j0bR data:,
+[1601672580.081][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1601672580.090][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1601672580.364][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "85.0.4183.121",
+      "chrome": {
+         "chromedriverVersion": "85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689})",
+         "userDataDir": "/var/folders/9b/fyg979ps08ncc1x80767xv7r0000gn/T/.com.google.Chrome.59j0bR"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:58698"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac os x",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "8050bbc08c48fd8d8ecdf2fab74769da"
+}
+[1601672580.743][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1601672580.743][INFO]: Waiting for pending navigations...
+[1601672580.750][INFO]: Done waiting for pending navigations. Status: ok
+[1601672580.857][INFO]: Waiting for pending navigations...
+[1601672580.858][INFO]: Done waiting for pending navigations. Status: ok
+[1601672580.858][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE SetWindowRect {
+   "height": 721,
+   "width": 1366,
+   "x": 22,
+   "y": 23
+}
+[1601672580.934][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND Navigate {
+   "url": "https://mvnrepository.com/"
+}
+[1601672580.934][INFO]: Waiting for pending navigations...
+[1601672580.936][INFO]: Done waiting for pending navigations. Status: ok
+[1601672582.003][INFO]: Waiting for pending navigations...
+[1601672585.196][INFO]: Done waiting for pending navigations. Status: ok
+[1601672585.196][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE Navigate
+[1601672585.318][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//input[@class='textfield']"
+}
+[1601672585.318][INFO]: Waiting for pending navigations...
+[1601672585.328][INFO]: Done waiting for pending navigations. Status: ok
+[1601672585.359][INFO]: Waiting for pending navigations...
+[1601672585.360][INFO]: Done waiting for pending navigations. Status: ok
+[1601672585.360][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "62bf983d-adf7-4256-ae58-1a5da174d90b"
+}
+[1601672585.377][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND TypeElement {
+   "id": "62bf983d-adf7-4256-ae58-1a5da174d90b",
+   "text": "junit",
+   "value": [ "j", "u", "n", "i", "t" ]
+}
+[1601672585.377][INFO]: Waiting for pending navigations...
+[1601672585.378][INFO]: Done waiting for pending navigations. Status: ok
+[1601672585.502][INFO]: Waiting for pending navigations...
+[1601672585.508][INFO]: Done waiting for pending navigations. Status: ok
+[1601672585.508][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE TypeElement
+[1601672588.553][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672588.553][INFO]: Waiting for pending navigations...
+[1601672588.554][INFO]: Done waiting for pending navigations. Status: ok
+[1601672588.569][INFO]: Waiting for pending navigations...
+[1601672588.570][INFO]: Done waiting for pending navigations. Status: ok
+[1601672588.570][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672588.812][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672588.812][INFO]: Waiting for pending navigations...
+[1601672588.814][INFO]: Done waiting for pending navigations. Status: ok
+[1601672588.821][INFO]: Waiting for pending navigations...
+[1601672588.822][INFO]: Done waiting for pending navigations. Status: ok
+[1601672588.822][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672589.034][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672589.034][INFO]: Waiting for pending navigations...
+[1601672589.036][INFO]: Done waiting for pending navigations. Status: ok
+[1601672589.047][INFO]: Waiting for pending navigations...
+[1601672589.048][INFO]: Done waiting for pending navigations. Status: ok
+[1601672589.048][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672589.264][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672589.264][INFO]: Waiting for pending navigations...
+[1601672589.266][INFO]: Done waiting for pending navigations. Status: ok
+[1601672589.274][INFO]: Waiting for pending navigations...
+[1601672589.275][INFO]: Done waiting for pending navigations. Status: ok
+[1601672589.275][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672589.491][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672589.491][INFO]: Waiting for pending navigations...
+[1601672589.494][INFO]: Done waiting for pending navigations. Status: ok
+[1601672589.502][INFO]: Waiting for pending navigations...
+[1601672589.505][INFO]: Done waiting for pending navigations. Status: ok
+[1601672589.505][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672589.716][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672589.716][INFO]: Waiting for pending navigations...
+[1601672589.717][INFO]: Done waiting for pending navigations. Status: ok
+[1601672589.724][INFO]: Waiting for pending navigations...
+[1601672589.725][INFO]: Done waiting for pending navigations. Status: ok
+[1601672589.725][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672589.940][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672589.940][INFO]: Waiting for pending navigations...
+[1601672589.946][INFO]: Done waiting for pending navigations. Status: ok
+[1601672589.957][INFO]: Waiting for pending navigations...
+[1601672589.959][INFO]: Done waiting for pending navigations. Status: ok
+[1601672589.959][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672590.173][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672590.173][INFO]: Waiting for pending navigations...
+[1601672590.174][INFO]: Done waiting for pending navigations. Status: ok
+[1601672590.182][INFO]: Waiting for pending navigations...
+[1601672590.182][INFO]: Done waiting for pending navigations. Status: ok
+[1601672590.183][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672590.396][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672590.396][INFO]: Waiting for pending navigations...
+[1601672590.398][INFO]: Done waiting for pending navigations. Status: ok
+[1601672590.407][INFO]: Waiting for pending navigations...
+[1601672590.408][INFO]: Done waiting for pending navigations. Status: ok
+[1601672590.408][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672590.619][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672590.619][INFO]: Waiting for pending navigations...
+[1601672590.620][INFO]: Done waiting for pending navigations. Status: ok
+[1601672590.627][INFO]: Waiting for pending navigations...
+[1601672590.628][INFO]: Done waiting for pending navigations. Status: ok
+[1601672590.628][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672590.839][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672590.839][INFO]: Waiting for pending navigations...
+[1601672590.841][INFO]: Done waiting for pending navigations. Status: ok
+[1601672590.851][INFO]: Waiting for pending navigations...
+[1601672590.851][INFO]: Done waiting for pending navigations. Status: ok
+[1601672590.852][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672591.063][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672591.063][INFO]: Waiting for pending navigations...
+[1601672591.064][INFO]: Done waiting for pending navigations. Status: ok
+[1601672591.071][INFO]: Waiting for pending navigations...
+[1601672591.071][INFO]: Done waiting for pending navigations. Status: ok
+[1601672591.072][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672591.282][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672591.282][INFO]: Waiting for pending navigations...
+[1601672591.284][INFO]: Done waiting for pending navigations. Status: ok
+[1601672591.293][INFO]: Waiting for pending navigations...
+[1601672591.295][INFO]: Done waiting for pending navigations. Status: ok
+[1601672591.295][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672591.508][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672591.508][INFO]: Waiting for pending navigations...
+[1601672591.511][INFO]: Done waiting for pending navigations. Status: ok
+[1601672591.519][INFO]: Waiting for pending navigations...
+[1601672591.520][INFO]: Done waiting for pending navigations. Status: ok
+[1601672591.520][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672591.731][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672591.731][INFO]: Waiting for pending navigations...
+[1601672591.732][INFO]: Done waiting for pending navigations. Status: ok
+[1601672591.741][INFO]: Waiting for pending navigations...
+[1601672591.741][INFO]: Done waiting for pending navigations. Status: ok
+[1601672591.741][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672591.988][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672591.988][INFO]: Waiting for pending navigations...
+[1601672592.083][INFO]: Done waiting for pending navigations. Status: ok
+[1601672592.112][INFO]: Waiting for pending navigations...
+[1601672592.118][INFO]: Done waiting for pending navigations. Status: ok
+[1601672592.118][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672592.334][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='JUnit Jupiter API']"
+}
+[1601672592.335][INFO]: Waiting for pending navigations...
+[1601672592.336][INFO]: Done waiting for pending navigations. Status: ok
+[1601672592.344][INFO]: Waiting for pending navigations...
+[1601672592.345][INFO]: Done waiting for pending navigations. Status: ok
+[1601672592.345][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='JUnit Jupiter API']"}
+  (Session info: chrome=85.0.4183.121)
+[1601672592.569][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "var source = document.documentElement.outerHTML; \nif (!source) { source = new XMLSerializer().serializeToString(document); }\nreturn source;"
+}
+[1601672592.569][INFO]: Waiting for pending navigations...
+[1601672592.573][INFO]: Done waiting for pending navigations. Status: ok
+[1601672592.588][INFO]: Waiting for pending navigations...
+[1601672592.589][INFO]: Done waiting for pending navigations. Status: ok
+[1601672592.589][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE ExecuteScript "\u003Chtml>\u003Chead>\u003Cmeta charset=\"UTF-8\">\u003Ctitle>Maven Repository: Search/Browse/Explore\u003C/title>\u003Clink rel=\"canonical\" href=\"https://mvnrepository.com/\">\u003Clink rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/..."
+[1601672592.629][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND Screenshot {
+
+}
+[1601672592.629][INFO]: Waiting for pending navigations...
+[1601672592.631][INFO]: Done waiting for pending navigations. Status: ok
+[1601672594.069][INFO]: Waiting for pending navigations...
+[1601672594.071][INFO]: Done waiting for pending navigations. Status: ok
+[1601672594.071][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAACqwAAAUECAYAAACj6aN4AAABKWlDQ1BTa2lhAAAokX2RMUvDQBTHfxYX0UFQ0cEh0MVFbaNtLbikFYtrq1Dd0jQEsa0xjdTdTRz8CM5+AwfB0VEQnFx1FoXO/s8OKUh8j7v7vf97yb27g8wSsswsdHtxVK9VrObhkcWYuV4/JN0mY..."
+[1601672594.696][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] COMMAND Quit {
+
+}
+[1601672594.799][INFO]: [8050bbc08c48fd8d8ecdf2fab74769da] RESPONSE Quit
