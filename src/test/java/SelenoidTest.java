@@ -1,44 +1,30 @@
 import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.WebDriverRunner;
-import org.junit.After;
+import driver.DriverProvider;
+import driver.WebBehavior;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 
 import static com.codeborne.selenide.Selenide.$x;
 import static io.qameta.allure.Allure.step;
 
 public class SelenoidTest {
+    static WebBehavior driver;
 
     @Before
-    public void initDriver() throws MalformedURLException {
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserName", "chrome");
-        capabilities.setCapability("browserVersion", "84.0");
-        Map<String,Object> cap = new HashMap<>();
-        cap.put("enableVNC", true);
-        cap.put("enableVideo", true);
-        capabilities.setCapability("selenoid:options", cap);
-
-        final String remoteDriver = "http://localhost:4444/wd/hub";
-        WebDriver driver = new RemoteWebDriver(new URL(remoteDriver), capabilities);
-        driver.manage().window().setSize(new Dimension(1920, 1080));
-        WebDriverRunner.setWebDriver(driver);
+    public void initDriver() {
+        driver = new DriverProvider().getDriver();
     }
 
+//    @Test
+//    public void initDriverTest() {
+//        driver.get("https://mvnrepository.com/");
+//    }
+
     @Test
-    public void test() throws InterruptedException {
-        org.apache.log4j.BasicConfigurator.configure();
+    public void selenoidTest() throws InterruptedException {
+//        org.apache.log4j.BasicConfigurator.configure();
         step("Открываем maven central", () -> {
             Selenide.open("https://mvnrepository.com/");
         });
@@ -57,8 +43,8 @@ public class SelenoidTest {
                 System.out.println($x("//textarea[@id='maven-a']").getText()));
     }
 
-    @After
-    public void stopDriver(){
-        Optional.ofNullable(WebDriverRunner.getWebDriver()).ifPresent(WebDriver::close);
+    @AfterEach
+    public void stopDriver() {
+        driver.closeAndQuit();
     }
 }
