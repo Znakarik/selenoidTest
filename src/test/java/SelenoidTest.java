@@ -17,10 +17,10 @@ public class SelenoidTest {
         driver = new DriverProvider().getDriver();
     }
 
-//    @Test
-//    public void initDriverTest() {
-//        driver.get("https://mvnrepository.com/");
-//    }
+    @Test
+    public void initDriverTest() {
+        driver.get("https://mvnrepository.com/");
+    }
 
     @Test
     public void selenoidTest() throws InterruptedException {
