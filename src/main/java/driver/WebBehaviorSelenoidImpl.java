@@ -14,7 +14,6 @@ import java.util.Optional;
 
 public class WebBehaviorSelenoidImpl extends RemoteWebDriver implements WebBehavior {
     private static java.util.Properties properties = util.Properties.getInstance().getProperties();
-    RemoteWebDriver driver;
     static DesiredCapabilities capabilities;
 
     public WebBehaviorSelenoidImpl() throws MalformedURLException {
@@ -34,7 +33,7 @@ public class WebBehaviorSelenoidImpl extends RemoteWebDriver implements WebBehav
     }
 
     public RemoteWebDriver getDriver() {
-        return driver;
+        return this;
     }
 
     @Override
